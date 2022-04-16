@@ -17,7 +17,8 @@ function App() {
       <AboutAndHeader />
       <TechnologiesComponent />
       <ProjectsSection />
-      <p className='mb-3 text w-full flex justify-center'>Para ver el codigo fuente de esta pagina click <a className="underline ml-1" href="https://github.com/grochadc/gonzo-cv" target="_blank" rel="noreferrer">aquí.</a></p>
+      <p className='mb-3 text w-full flex justify-center'>Para ver el CV como una App de React visita: <a className="underline ml-1" href="https://gonzalorocha.com.mx" rel="noreferrer" target="_blank">https://gonzalorocha.com.mx</a></p>
+      <p className="mb-3 w-full flex justify-center">(Codigo fuente <a className="underline ml-1" href="https://github.com/grochadc/gonzalo-cv" target="_blank" rel="noreferrer">aquí</a>).</p>
       <ContactFooter />
     </div>
   );
