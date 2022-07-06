@@ -1,8 +1,9 @@
 import technologies from "../data/technologies";
+import locale from "../locale";
 
 const Entry = (props: {name: string; icon: any; since: string; nowYear: number}) => {
     const yearDiff = props.nowYear - Number(props.since);
-    const yearsExpression = yearDiff > 1 ? "años" : "año"
+    const yearsExpression = yearDiff > 1 ? locale.getString("tech.years") : locale.getString("tech.year");
     return (
     <div className="flex justify-between w-full items-center">
       <div className="h-28 flex items-center">
@@ -17,10 +18,10 @@ const Entry = (props: {name: string; icon: any; since: string; nowYear: number})
 function TechnologiesComponent(){
     const now = new Date();
     return (<section className='flex flex-col items-center mt-20'>
-    <h2 className="text-4xl font-bold mb-5">Tecnologías Web</h2>
+    <h2 className="text-4xl font-bold mb-5">{locale.getString("tech.title")}</h2>
     <div className="border border-black rounded px-2 py-12 w-3/4 flex flex-col items-center">
       <div>
-      <div className="w-full"><span className="text-2xl font-bold">Desde</span></div>
+      <div className="w-full"><span className="text-2xl font-bold">{locale.getString("tech.since")}</span></div>
         {technologies.map((tech, index) => {
         return <Entry key={tech.name} name={tech.name} icon={tech.icon} since={tech.since} nowYear={now.getFullYear()} />;
       })}</div>
