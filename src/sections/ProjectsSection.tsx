@@ -24,20 +24,20 @@ const ClientItem = (props: {title: string; description: string; url: string;}) =
 
 const Subsection = (props: {title: string; description: string; children?: any}) => (
     <div className="w-full">
-        <h3 className="text-3xl font-bold text-center">{props.title}</h3>
+        <h3 className="text-4xl font-bold text-center font-cabinet">{props.title}</h3>
         <p className="text-center">{props.description}</p>
         {props.children}
     </div>);
 
-const Card = tw.div`border border-black rounded p-4 my-4 flex flex-row justify-around`;
+const Card = tw.div`rounded p-4 my-4 flex flex-row justify-around bg-white drop-shadow-md`;
 
 function ProjectsSection() {
     return (
         <section className="m-28 text-center">
-            <h2 className="text-4xl font-bold">{locale.getString("project.title")}</h2>
+            <h2 className="text-5xl font-bold font-cabinet">{locale.getString("project.title")}</h2>
             <h3 className="text-2xl">{locale.getString("project.subtitle")}</h3>
             <p>({locale.getString("project.since")} 2019)</p>
-            <p className="text-justify">{locale.getString("project.paragraph")}</p>
+            <p className="text-justify font-roboto">{locale.getString("project.paragraph")}</p>
             <Subsection title={locale.getString("project.stack.backend.title")} description={locale.getString("project.stack.backend.description")}>
                 <p className="text-center"><Link rel="noreferrer" href="https://github.com/grochadc/filex-graphql-server" target="_blank">{locale.getString("project.code")} Github</Link></p>
                 <Card>

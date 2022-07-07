@@ -9,6 +9,7 @@ import {Link} from "../components";
 
 import locale from "../locale";
 
+
 const ContactLlinks: ListItem[] = [
     {name: "github", icon: GithubTile, href:"https://github.com/grochadc", children: ['grochadc']},
     //{name:"twitter", icon: TwitterTile, href:"https://twitter.com/medicengonzo", children: ['@medicengonzo']},
@@ -29,20 +30,20 @@ const Flag = (props: {src: any}) => {
     return (<><img src={props.src} alt="" className="h-3 ml-1" /></>)
 }
 
-const Header = () => (
+export const Header = () => (
     <header className='bg-fogra md:h-1/3vh flex flex-col md:flex-row justify-between p-6 md:p-12'>
         <div>
             <h1 className="text-5xl md:text-7xl font-bold text-white font-montserrat">Gonzalo Rocha</h1>
             <p className='text-white  text-lg md:text-xl relative left-3 top-2'>React | Typescript | GraphQL</p>
         </div>
-        <img  className="rounded-full mt-3 h-24 w-24 md:h-72 md:w-72" src={ProfilePic} alt="Foto de Perfil" />
+        <img  className="rounded-full mt-3 h-24 w-24 md:h-72 md:w-72 z-10" src={ProfilePic} alt="Foto de Perfil" />
     </header>
 );
-const About = () => (
+export const About = () => (
     <section className="flex flex-row justify-around">
         <div className="w-3/5 ml-0 mt-12">
-            <h2 className="text-4xl font-bold mb-2">{locale.getString("about.title")}</h2>
-            <p>{locale.getString("about.paragraph")}</p>
+            <h2 className="text-4xl font-bold mb-2 font-cabinet">{locale.getString("about.title")}</h2>
+            <p className="font-roboto">{locale.getString("about.paragraph")}</p>
             <ContactInfo list={ContactLlinks} />
         </div>
         <div className="text-center relative top-36 w-48 right-2">
