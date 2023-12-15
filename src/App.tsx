@@ -8,6 +8,7 @@ import ContactFooter from "./sections/ContactFooter";
 
 import {Helmet} from "react-helmet";
 import ExtraSection from './sections/ExtraSection';
+import OtherSection from './sections/OtherKnowledgeSection';
 
 import locale from "./locale";
 
@@ -22,6 +23,7 @@ function App() {
       <div className='pattern'>
       <About />
       <TechnologiesComponent />
+      <OtherSection />
       <ProjectsSection />
       <ExtraSection />
       <p className='mb-3 text w-full flex justify-center'>{locale.getString("footer.app")} <a className="underline ml-1" href="https://gonzalorocha.com.mx" rel="noreferrer" target="_blank">https://gonzalorocha.com.mx</a></p>

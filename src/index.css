@@ -5,10 +5,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@page {
+  size: A1;
+}
+
+@media print {
+  .printHeader {
+    max-height: 20rem;
+  }
+}
+
+html {
+  -webkit-print-color-adjust: exact;
+}
+
 .pattern {
-  background-color: #fff;
+  background-color: #e5e5f7;
   opacity: 0.8;
-  background-image: radial-gradient(#444cf7 0.9500000000000001px, #e5e5f7 0.9500000000000001px);
   background-size: 19px 19px;
   position: relative;
   z-index: 0;

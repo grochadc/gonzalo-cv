@@ -6,7 +6,8 @@ import ReactJSIcon from "../icons/react-icon.svg";
 import JestIcon from "../icons/jest-icon.svg";
 import TypescriptIcon from "../icons/typescript-icon.svg";
 import TailwindIcon from "../icons/tailwind-css-icon.svg";
-import PostgreSQLIcon from "../icons/postgresql.svg"
+import PostgreSQLIcon from "../icons/postgresql.svg";
+import PHPIcon from "../icons/php_logo.svg";
 
 type Technology = {
     name: string;
@@ -24,5 +25,6 @@ const data: Technology[] = [
     {name: "Typescript", since: "2021", icon: TypescriptIcon},
     {name: "PostgreSQL", since: "2021", icon: PostgreSQLIcon},
     {name: "TailwindCSS", since: "2021", icon: TailwindIcon},
+    {name: "PHP", since: "2023", icon: PHPIcon},
 ]
 export default data;

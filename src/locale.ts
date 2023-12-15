@@ -55,10 +55,16 @@ const strings = new LocalizedStrings({
         learning: {
             title: "Actualmente Aprendiendo",
             items: {
-                datastruct: "Algoritmos y estructuras de datos",
-                responsive: "CSS Responsivo",
                 uxd: "Diseño UX/UI"
             }
+        },
+        otherTech: {
+            title: "Otros Conocimientos",
+            items: {
+                datastruct: "Algoritmos y estructuras de datos",
+                responsive: "CSS Responsivo",
+                cleanCode: "Codigo Limpio"
+            }  
         },
         footer: {
             app: "Para ver este CV como una App de Reactjs visita",
@@ -69,7 +75,7 @@ const strings = new LocalizedStrings({
     en: {
         about: {
             title: "About Me",
-            paragraph: "My name is Gonzalo Rocha. I have a bachelors degree in Communication Sciences Ciencias but I have been passionate about web techonolgies since my teenage years. Since 2011 I have self-taugh different technologies for development and web design and I have mantained different personal projects." 
+            paragraph: "My name is Gonzalo Rocha. I have a bachelors degree in Communication Sciences but I have been passionate about web techonolgies since my teenage years. Since 2011 I have self-taugh different technologies for development and web design and I have mantained different personal projects." 
         },
         speak: {
             country: "Mexico",
@@ -118,12 +124,20 @@ const strings = new LocalizedStrings({
             },
         },
         learning: {
-            title: "Currently learning",
+            title: "Currently Learning",
+            items: {
+                uxd: "UX/UI Design",
+                agile: "Agile/SCRUM Methodology",
+            }
+        },
+        otherTech: {
+            title: "Other Knowledge",
             items: {
                 datastruct: "Algorithms and Data Structures",
                 responsive: "Responsive CSS",
-                uxd: "UX/UI Design"
-            }
+                cleanCode: "Clean Code"
+
+            }  
         },
         footer: {
             app: "To experience this resume as a React app",
